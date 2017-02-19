@@ -1,0 +1,18 @@
+<div class="location-container">
+  <div class="location-banner">
+    where are you?
+  </div>
+
+  <div class="location-input">
+    <div id="address-wrapper">
+      <input type="search" [value]="locationName">
+    </div>
+    <button type="button" class="zp-button" (click)="handleGoClick()">go</button>
+  </div>
+
+  <div class="location-detection" (click)="handleDetectLocation()">
+    detect my location
+  </div>
+  <p style="font-size: 0.2em;">{{ location | json }}</p>
+
+</div>

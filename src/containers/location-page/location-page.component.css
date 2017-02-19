@@ -1,0 +1,42 @@
+.location-container {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.location-banner {
+    color: var(--main-color);
+}
+
+.location-input {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+    margin: 20px;
+    width: 60%;
+}
+
+.location-input #address-wrapper {
+    width: 70%;
+}
+
+.location-input > button {
+    width: 20%;
+    min-width: 200px;
+}
+
+.location-input input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.location-detection {
+    font-size: 0.5em;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--accent-color);
+}

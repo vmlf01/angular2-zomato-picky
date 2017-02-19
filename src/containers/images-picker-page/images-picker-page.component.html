@@ -1,0 +1,18 @@
+<div class="picker-container">
+  <div class="picker-banner">
+    pick the images you like the most!
+  </div>
+
+  <div class="images-grid">
+    <app-image-card
+      *ngFor="let image of availableImages"
+      [imageUrl]="image.url"
+      (click)="handleImageClick(image)"
+    ></app-image-card>
+  </div>
+
+  <div class="restart-search" (click)="handleRestartSearch()">
+    restart
+  </div>
+
+</div>

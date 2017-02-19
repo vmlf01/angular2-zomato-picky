@@ -1,0 +1,66 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-header {
+    height: 80px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .app-header {
+        height: 120px;
+    }
+}
+
+.app-header-container {
+    background-color: var(--main-color);
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-logo {
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icon {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.app-title-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.app-title {
+    font-size: 4vw;
+}
+
+.main-color {
+    color: white;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+
+
+
+
+.app-content {
+    background-color: white;
+    flex: 1;
+}

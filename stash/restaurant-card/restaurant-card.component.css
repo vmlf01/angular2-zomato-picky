@@ -1,0 +1,50 @@
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+    height: 100%;
+}
+
+.thumbnail {
+    flex: 1;
+}
+
+.thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: 150ms;
+    opacity: 0.90;
+    object-fit: cover;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.10) rotate(-2deg);
+    opacity: 1.0;
+}
+
+.details {
+    margin: auto;
+    padding: 10px 10px;
+    background-color: var(--main-color);
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    flex: 1;
+}
+
+.rating {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin-left: 15px;
+}
+
