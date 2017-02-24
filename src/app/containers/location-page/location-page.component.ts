@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import { Router } from '@angular/router';
 
 import { GeoLocation } from '../../interfaces';
+import { GeoLocationService } from '../../services/geo-location.service';
 import { RestaurantFinderService } from '../../services/restaurant-finder.service';
 
 @Component({
@@ -15,6 +16,7 @@ export class LocationPageComponent implements OnInit {
 
     constructor(
         private router: Router,
+        private geoLocationService: GeoLocationService,
         private restaurantFinderService: RestaurantFinderService
     ) { }
 
@@ -23,12 +25,11 @@ export class LocationPageComponent implements OnInit {
     }
 
     handleDetectLocation() {
-        this.location = {
-            "name": "Rua Fogo de Santelmo, Parque das Nações, Lisboa, Portugal",
-            "latitude": 38.7605,
-            "longitude": -9.0951
-        };
-        this.locationName = this.location.name;
+        this.geoLocationService.getCurrentLocation()
+            .subscribe(location => {
+                this.location = location;
+                this.locationName = this.location.name;
+            });
     }
 
     handleGoClick() {

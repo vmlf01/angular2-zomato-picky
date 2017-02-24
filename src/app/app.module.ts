@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutes } from './app.routes';
 
+import { GeoLocationService } from './services/geo-location.service';
 import { RestaurantFinderService } from './services/restaurant-finder.service';
 
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [
+    GeoLocationService,
     RestaurantFinderService,
   ],
   bootstrap: [AppComponent]
