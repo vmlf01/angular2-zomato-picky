@@ -15,6 +15,7 @@ import { ImagesPickerPageComponent } from './containers/images-picker-page';
 import { LocationPageComponent } from './containers/location-page';
 import { SearchResultsPageComponent } from './containers/search-results-page';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
+import { RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
     LocationPageComponent,
     SearchResultsPageComponent,
     AppHeaderComponent,
+    RestaurantCardComponent,
   ],
   imports: [
     BrowserModule,

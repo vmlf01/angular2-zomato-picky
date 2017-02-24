@@ -5,7 +5,10 @@
 
   <div class="results-grid">
 
-    TODO: show Restaurant results
+    <app-restaurant-card
+      *ngFor="let restaurant of results"
+      [restaurant]="restaurant"
+    ></app-restaurant-card>
 
   </div>
 
