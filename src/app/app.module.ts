@@ -13,6 +13,7 @@ import { ImageCardComponent } from './components/image-card';
 import { ImagesPickerPageComponent } from './containers/images-picker-page';
 import { LocationPageComponent } from './containers/location-page';
 import { SearchResultsPageComponent } from './containers/search-results-page';
+import { AppHeaderComponent } from './components/app-header/app-header.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SearchResultsPageComponent } from './containers/search-results-page';
     ImagesPickerPageComponent,
     LocationPageComponent,
     SearchResultsPageComponent,
+    AppHeaderComponent,
   ],
   imports: [
     BrowserModule,
